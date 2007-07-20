@@ -13,6 +13,7 @@ Source:			%{name}-%{version}.tar.bz2
 BuildRoot:		%{_tmppath}/%{name}-%{version}-buildroot
 BuildRequires:	        ncurses-devel
 BuildRequires:          pkgconfig
+BuildRequires:		libglib2-devel
 
 %description
 ncmpc is a curses client for the Music Player Daemon (MPD). ncmpc connects to a
