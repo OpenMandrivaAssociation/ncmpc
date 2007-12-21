@@ -10,6 +10,7 @@ License:		GPL
 Group:			Sound
 URL:			http://hem.bredband.net/kaw/ncmpc/
 Source:			%{name}-%{version}.tar.bz2
+BuildRoot:		%{_tmppath}/%{name}-%{version}-buildroot
 BuildRequires:	        ncurses-devel
 BuildRequires:          pkgconfig
 BuildRequires:		libglib2-devel
