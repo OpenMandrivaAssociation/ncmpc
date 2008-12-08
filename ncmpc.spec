@@ -8,12 +8,12 @@ Version:		%version
 Release:		%release
 License:		GPL
 Group:			Sound
-URL:			http://hem.bredband.net/kaw/ncmpc/
-Source:			%{name}-%{version}.tar.bz2
+URL:			http://mpd.wikia.com/wiki/Client:Ncmpc
+Source:         http://downloads.sourceforge.net/musicpd/%{name}-%{version}.tar.bz2
 BuildRoot:		%{_tmppath}/%{name}-%{version}-buildroot
-BuildRequires:	        ncurses-devel
-BuildRequires:          pkgconfig
-BuildRequires:		libglib2-devel
+BuildRequires:	ncurses-devel
+BuildRequires:  pkgconfig
+BuildRequires:	libglib2-devel
 
 %description
 ncmpc is a curses client for the Music Player Daemon (MPD). ncmpc connects to a
