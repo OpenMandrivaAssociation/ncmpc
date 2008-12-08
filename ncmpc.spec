@@ -1,5 +1,5 @@
 %define name 	        ncmpc
-%define version         0.11.1
+%define version         0.12
 %define release	        %mkrel 5
 
 Summary:		Ncurses client for MPD
@@ -41,6 +41,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %name.lang
 %defattr(-,root,root)
-%doc README AUTHORS NEWS ChangeLog COPYING doc/config.sample doc/keys.sample doc/ncmpc.lirc
+%doc README AUTHORS NEWS COPYING doc/config.sample doc/keys.sample doc/ncmpc.lirc
 %{_bindir}/%name
 %{_mandir}/man1/*
