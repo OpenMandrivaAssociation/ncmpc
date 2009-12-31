@@ -1,5 +1,5 @@
 %define name 	        ncmpc
-%define version         0.15
+%define version         0.16
 %define release	        %mkrel 1
 
 Summary:		Ncurses client for MPD
