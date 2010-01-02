@@ -13,7 +13,7 @@ URL:			http://mpd.wikia.com/wiki/Client:Ncmpc
 Source0:        http://downloads.sourceforge.net/musicpd/%{name}-%{version}.tar.bz2
 
 BuildRequires:  libmpdclient
-BuildRequires:  libncursesw5
+BuildRequires:  ncursesw5-devel
 
 BuildRoot:		%{_tmppath}/%{name}-%{version}-%{release}
 
