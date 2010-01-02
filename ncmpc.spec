@@ -14,7 +14,7 @@ Source0:        http://downloads.sourceforge.net/musicpd/%{name}-%{version}.tar.
 
 BuildRequires:  glib2-devel
 BuildRequires:  libmpdclient-devel
-BuildRequires:  ncursesw-devel
+BuildRequires:  ncurses-devel
 
 BuildRoot:		%{_tmppath}/%{name}-%{version}-%{release}
 
