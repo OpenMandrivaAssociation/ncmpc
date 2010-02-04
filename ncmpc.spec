@@ -1,5 +1,5 @@
 %define name 	        ncmpc
-%define version         0.16
+%define version         0.16.1
 %define release	        %mkrel 1
 
 Name:			%name
