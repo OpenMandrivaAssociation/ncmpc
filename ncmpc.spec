@@ -1,6 +1,6 @@
 %define name 	        ncmpc
 %define version         0.17
-%define release	        %mkrel 2
+%define release	        %mkrel 3
 
 Name:			%name
 Version:		%version
@@ -14,7 +14,7 @@ Source0:        http://downloads.sourceforge.net/musicpd/%{name}-%{version}.tar.
 
 BuildRequires:  glib2-devel
 BuildRequires:  libmpdclient-devel
-BuildRequires:  ncurses-devel
+BuildRequires:  ncursesw-devel
 
 BuildRoot:		%{_tmppath}/%{name}-%{version}-%{release}
 
