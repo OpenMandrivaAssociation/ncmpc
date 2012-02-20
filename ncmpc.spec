@@ -1,5 +1,5 @@
 %define name 	        ncmpc
-%define version         0.19
+%define version         0.20
 %define release	        1
 
 Name:			%name
@@ -16,8 +16,6 @@ BuildRequires:  glib2-devel
 BuildRequires:  libmpdclient-devel
 BuildRequires:  ncursesw-devel
 
-BuildRoot:		%{_tmppath}/%{name}-%{version}-%{release}
-
 %description
 ncmpc is a curses client for the Music Player Daemon (MPD). ncmpc connects to a
 MPD running on a machine on the local network, and controls this with an
@@ -32,18 +30,13 @@ used to manage playlists and control MPD with a remote control.
 %make
 
 %install
-rm -rf $RPM_BUILD_ROOT
 %makeinstall
 
 rm -rf $RPM_BUILD_ROOT/%{_docdir}/%{name}/
 
 %find_lang %name
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files -f %name.lang
-%defattr(-,root,root)
 %doc README AUTHORS NEWS COPYING doc/config.sample doc/keys.sample doc/ncmpc.lirc
 %{_bindir}/%name
 %{_mandir}/man1/*
