@@ -12,6 +12,7 @@ Source0:	http://www.musicpd.org/download/ncmpc/0/%{name}-%{version}.tar.xz
 BuildRequires:  pkgconfig(glib-2.0)
 BuildRequires:  pkgconfig(libmpdclient)
 BuildRequires:  pkgconfig(ncurses)
+BuildRequires:	pkgconfig(lirc)
 BuildRequires:  meson
 
 %description
