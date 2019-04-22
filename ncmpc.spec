@@ -1,7 +1,7 @@
 %define name 	        ncmpc
 
 Name:			ncmpc
-Version:		0.25
+Version:		0.34
 Release:		1
 Summary:		Ncurses client for MPD
 License:		GPL
@@ -24,10 +24,10 @@ used to manage playlists and control MPD with a remote control.
 
 %build
 %configure
-%make
+%make_build
 
 %install
-%makeinstall
+%make_install
 
 rm -rf $RPM_BUILD_ROOT/%{_docdir}/%{name}/
 
