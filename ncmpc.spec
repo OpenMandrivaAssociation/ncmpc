@@ -13,6 +13,9 @@ BuildRequires:  pkgconfig(glib-2.0)
 BuildRequires:  pkgconfig(libmpdclient)
 BuildRequires:  pkgconfig(ncurses)
 BuildRequires:	pkgconfig(lirc)
+BuildRequires:	ninja
+BuildRequires:	boost-devel
+BuildRequires:	python-sphinx
 BuildRequires:  meson
 
 %description
