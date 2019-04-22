@@ -39,6 +39,6 @@ rm -rf $RPM_BUILD_ROOT/%{_docdir}/%{name}/
 %find_lang %name
 
 %files -f %name.lang
-%doc README AUTHORS NEWS COPYING doc/config.sample doc/keys.sample doc/ncmpc.lirc
+%doc README.rst AUTHORS NEWS COPYING doc/config.sample doc/keys.sample doc/ncmpc.lirc
 %{_bindir}/%name
 %{_mandir}/man1/*
