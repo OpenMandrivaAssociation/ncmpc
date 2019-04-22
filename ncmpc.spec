@@ -23,11 +23,11 @@ used to manage playlists and control MPD with a remote control.
 %setup -q
 
 %build
-%configure
-%make_build
+%meson
+%meson_build
 
 %install
-%make_install
+%meson_install
 
 rm -rf $RPM_BUILD_ROOT/%{_docdir}/%{name}/
 
