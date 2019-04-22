@@ -1,7 +1,7 @@
 %define name 	        ncmpc
 
 Name:			ncmpc
-Version:		0.25
+Version:		0.34
 Release:		1
 Summary:		Ncurses client for MPD
 License:		GPL
@@ -12,6 +12,11 @@ Source0:	http://www.musicpd.org/download/ncmpc/0/%{name}-%{version}.tar.xz
 BuildRequires:  pkgconfig(glib-2.0)
 BuildRequires:  pkgconfig(libmpdclient)
 BuildRequires:  pkgconfig(ncurses)
+BuildRequires:	pkgconfig(lirc)
+BuildRequires:	ninja
+BuildRequires:	boost-devel
+BuildRequires:	python-sphinx
+BuildRequires:  meson
 
 %description
 ncmpc is a curses client for the Music Player Daemon (MPD). ncmpc connects to a
@@ -23,17 +28,17 @@ used to manage playlists and control MPD with a remote control.
 %setup -q
 
 %build
-%configure
-%make
+%meson
+%meson_build
 
 %install
-%makeinstall
+%meson_install
 
 rm -rf $RPM_BUILD_ROOT/%{_docdir}/%{name}/
 
 %find_lang %name
 
 %files -f %name.lang
-%doc README AUTHORS NEWS COPYING doc/config.sample doc/keys.sample doc/ncmpc.lirc
+%doc README.rst AUTHORS NEWS COPYING doc/config.sample doc/keys.sample doc/ncmpc.lirc
 %{_bindir}/%name
 %{_mandir}/man1/*
