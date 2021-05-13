@@ -2,7 +2,7 @@
 
 Name:			ncmpc
 Version:		0.45
-Release:		1
+Release:		2
 Summary:		Ncurses client for MPD
 License:		GPL
 Group:			Sound
