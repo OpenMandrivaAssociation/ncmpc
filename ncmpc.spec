@@ -13,6 +13,7 @@ BuildRequires:  pkgconfig(glib-2.0)
 BuildRequires:  pkgconfig(libmpdclient)
 BuildRequires:  pkgconfig(ncurses)
 BuildRequires:	pkgconfig(lirc)
+BuildRequires:  pkgconfig(libpcre2-8)
 BuildRequires:	ninja
 BuildRequires:	boost-devel
 BuildRequires:	python-sphinx
