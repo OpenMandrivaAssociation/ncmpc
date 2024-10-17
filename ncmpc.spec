@@ -6,7 +6,7 @@ Release:		1
 Summary:		Ncurses client for MPD
 License:		GPL
 Group:			Sound
-URL:			http://mpd.wikia.com/wiki/Client:Ncmpc
+URL:			https://mpd.wikia.com/wiki/Client:Ncmpc
 Source0:	http://www.musicpd.org/download/ncmpc/0/%{name}-%{version}.tar.xz
 
 BuildRequires:  pkgconfig(glib-2.0)
