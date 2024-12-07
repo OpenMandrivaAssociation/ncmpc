@@ -1,7 +1,7 @@
 %define name 	        ncmpc
 
 Name:			ncmpc
-Version:		0.49
+Version:		0.51
 Release:		1
 Summary:		Ncurses client for MPD
 License:		GPL
