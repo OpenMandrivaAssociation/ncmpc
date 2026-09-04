@@ -3,7 +3,7 @@
 Summary:		Ncurses client for MPD
 Name:	ncmpc
 Version:		0.54
-Release:		1
+Release:		2
 License:		GPLv2+
 Group:	Sound
 Url:	https://www.musicpd.org/clients/ncmpc/
